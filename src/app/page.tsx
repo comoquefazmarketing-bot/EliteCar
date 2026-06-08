@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { salvarLead } from "./actions";
 
 /* -------------------------------------------------------------------------- */
@@ -221,14 +222,17 @@ export default function Home() {
           aria-hidden="true"
         />
         <div className="relative mx-auto max-w-md px-5 pb-12 pt-8 sm:max-w-xl sm:px-8">
-          {/* Marca — troque por <img> do logo PNG quando subir o asset */}
+          {/* Marca */}
           <div className="mb-7">
-            <span className="text-2xl font-extrabold tracking-tight" style={{ color: GOLD }}>
-              EliteCar
-            </span>
-            <span className="block text-[10px] font-semibold tracking-[0.32em]" style={{ color: "rgba(224,178,62,0.7)" }}>
-              VEÍCULO PREMIUM
-            </span>
+            <Image
+              src="/logo-elitecar.jpg"
+              alt="EliteCar — Veículos Premium. Mais que negócios, realizamos sonhos."
+              width={249}
+              height={250}
+              priority
+              className="h-auto w-[165px]"
+              style={{ mixBlendMode: "screen" }}
+            />
           </div>
 
           <span
@@ -446,8 +450,14 @@ export default function Home() {
       <footer className="bg-[#050505] py-10 text-neutral-400">
         <div className="mx-auto max-w-md px-5 sm:max-w-2xl sm:px-8">
           <div>
-            <span className="text-xl font-extrabold" style={{ color: GOLD }}>EliteCar</span>
-            <span className="block text-[10px] font-semibold tracking-[0.32em]" style={{ color: "rgba(224,178,62,0.7)" }}>VEÍCULO PREMIUM</span>
+            <Image
+              src="/logo-elitecar.jpg"
+              alt="EliteCar — Veículos Premium"
+              width={249}
+              height={250}
+              className="h-auto w-[150px]"
+              style={{ mixBlendMode: "screen" }}
+            />
           </div>
 
           <p className="mt-4 text-base font-semibold leading-snug text-white">

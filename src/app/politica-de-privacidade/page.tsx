@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade | EliteCar",
@@ -28,17 +29,16 @@ export default function PoliticaDePrivacidade() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-[#0A0A0A] px-5 py-4 sm:px-8">
-        <a href="/" className="inline-flex flex-col" aria-label="EliteCar — página inicial">
-          <span className="text-xl font-extrabold" style={{ color: GOLD }}>
-            EliteCar
-          </span>
-          <span
-            className="text-[9px] font-semibold tracking-[0.3em]"
-            style={{ color: "rgba(224,178,62,0.7)" }}
-          >
-            VEÍCULO PREMIUM
-          </span>
+      <header className="bg-[#0A0A0A] px-5 py-5 sm:px-8">
+        <a href="/" aria-label="EliteCar — página inicial">
+          <Image
+            src="/logo-elitecar.jpg"
+            alt="EliteCar — Veículos Premium"
+            width={249}
+            height={250}
+            className="h-auto w-[120px]"
+            style={{ mixBlendMode: "screen" }}
+          />
         </a>
       </header>
 
