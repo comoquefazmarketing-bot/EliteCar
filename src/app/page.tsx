@@ -85,9 +85,9 @@ const dores = [
 
 const beneficios = [
   "Quitação integral do contrato de financiamento",
+  "Dinheiro na mão: você recebe o valor do ágio à vista, via PIX",
   "Liberação imediata do seu CPF",
   "Contrato registrado em cartório, com total segurança jurídica",
-  "Pagamento do saldo à vista, na hora, via PIX",
 ];
 
 const passos = [
@@ -105,9 +105,9 @@ const passos = [
   },
   {
     n: "3",
-    titulo: "Dinheiro na conta",
+    titulo: "Dinheiro na sua conta",
     texto:
-      "Assinamos o contrato em cartório, quitamos o banco e você recebe o saldo via PIX.",
+      "Assinamos o contrato em cartório, quitamos o banco e você ainda recebe o valor do ágio à vista, via PIX.",
   },
 ];
 
@@ -375,6 +375,15 @@ export default function Home() {
               </li>
             ))}
           </ul>
+
+          <div className="mt-8 flex items-start gap-3 rounded-2xl border border-emerald-400/30 bg-emerald-400/10 p-5">
+            <span className="text-2xl">💰</span>
+            <p className="text-base font-semibold leading-snug text-white">
+              Você não sai só livre da dívida — sai com{" "}
+              <span className="text-emerald-400">dinheiro no bolso</span>.
+              Pagamos o valor do ágio à vista, direto no seu PIX.
+            </p>
+          </div>
         </div>
       </section>
 
